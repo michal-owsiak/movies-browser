@@ -1,4 +1,4 @@
-import MovieBaner from "./MovieBaner";
+import MovieBanner from "./MovieBanner";
 import MovieTileDetails from "./MovieTileDetails";
 import { GlobalWrapper } from "../../common/GlobalWrapper/styled";
 import { MovieWrapper, Title } from "./styled";
@@ -32,9 +32,9 @@ const Movie = () => {
 
         return (
             <MovieWrapper>
-                <MovieBaner
+                <MovieBanner
                     key={popularMovie.backdrop_path}
-                    baner={popularMovie.backdrop_path}
+                    banner={popularMovie.backdrop_path}
                     title={popularMovie.title}
                     rating={popularMovie.vote_average}
                     votes={popularMovie.vote_count}

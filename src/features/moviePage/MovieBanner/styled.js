@@ -5,7 +5,7 @@ export const Background = styled.div`
 	background: ${({ theme }) => theme.color.black};
 `;
 
-export const BanerContainer = styled.div`
+export const BannerContainer = styled.div`
 	position: relative;
 	max-width: 1920px;
 	height: 774px;
@@ -31,7 +31,7 @@ export const Shadow = styled.img`
 	z-index: 1;
 `;
 
-export const Baner = styled.img`
+export const Banner = styled.img`
 	width: 100%;
 	max-height: 770px;
 	max-width: 1368px;

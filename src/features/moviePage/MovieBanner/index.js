@@ -2,9 +2,9 @@ import { useState } from "react";
 import { GlobalWrapper } from "../../../common/GlobalWrapper/styled";
 import {
 	Background,
-	BanerContainer,
+	BannerContainer,
 	Shadow,
-	Baner,
+	Banner,
 	MovieInfo,
 	Title,
 	Stats,
@@ -14,14 +14,14 @@ import {
 	Votes
 } from "./styled";
 import shadow from "../../../images/shadow.png";
-import noBaner from "../../../images/no-backdrop.svg";
+import noBanner from "../../../images/no-backdrop.svg";
 import { imageURL } from "../../../common/API/APIData";
 
 function formatNumber(number) {
 	return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "\u00A0");
 };
 
-const MovieBaner = ({ baner, title, rating, votes }) => {
+const MovieBanner = ({ banner, title, rating, votes }) => {
 	const [isImageLoaded, setIsImageLoaded] = useState(false);
 
 	const handleImageLoad = () => {
@@ -31,14 +31,14 @@ const MovieBaner = ({ baner, title, rating, votes }) => {
 	return (
 		<Background>
 			<GlobalWrapper>
-				<BanerContainer>
+				<BannerContainer>
 					<Shadow
 						src={shadow}
 						alt="Shadow Frame"
 					/>
-					<Baner
-						src={baner ? (imageURL + "w1280" + baner) : noBaner}
-						alt="Baner"
+					<Banner
+						src={banner ? (imageURL + "w1280" + banner) : noBanner}
+						alt="Banner"
 						onLoad={handleImageLoad}
 					/>
 					{isImageLoaded && (
@@ -58,10 +58,10 @@ const MovieBaner = ({ baner, title, rating, votes }) => {
 							</Stats>
 						</MovieInfo>
 					)}
-				</BanerContainer>
+				</BannerContainer>
 			</GlobalWrapper>
 		</Background>
 	);
 };
 
-export default MovieBaner;
+export default MovieBanner;
