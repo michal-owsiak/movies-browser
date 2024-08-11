@@ -62,9 +62,9 @@ export const MovieDateText = styled.span`
     font-weight: 400;
     line-height: 120%;
 
-	@media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-		display: none;
-	}
+    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        display: none;
+    }
 `;
 
 export const MovieDate = styled.p`
@@ -72,11 +72,11 @@ export const MovieDate = styled.p`
     font-weight: 400;
     line-height: 120%;
 
-	@media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-		font-size: 12px;
+    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        font-size: 12px;
         line-height: 130%;
         margin: 0;
-	}
+    }
 `;
 
 export const DescriptionText = styled.p`
@@ -85,10 +85,10 @@ export const DescriptionText = styled.p`
     line-height: 160%;
     margin-bottom: 0;
 
-	@media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-		font-size: 14px;
+    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        font-size: 14px;
         margin: 0;
-	}
+    }
 `;
 
 export const GenreTags = styled.ul`

@@ -15,12 +15,12 @@ export const StyledSearchBar = styled.div`
     align-items: center;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-      	margin: 0 0 16px;
+          margin: 0 0 16px;
         max-width: 1140px;
     };
 
     @media (max-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
-      	margin: 0 0 12px;
+          margin: 0 0 12px;
     };
 `;
 
@@ -31,23 +31,23 @@ export const Icon = styled(SearchIcon)`
     @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
         height: 16px;
         width: 16px;
-  	};
+      };
 `;
 
 export const Input = styled.input`
-  	color: ${({ theme }) => theme.color.waterloo};
-  	width: 100%;
-  	height: 200%;
-  	font-size: 16px;
-  	font-weight: 400;
-  	line-height: 150%;
-  	border: none;
+      color: ${({ theme }) => theme.color.waterloo};
+      width: 100%;
+      height: 200%;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%;
+      border: none;
 
-  	&:focus {
-    	outline: none;
-  	};
+      &:focus {
+        outline: none;
+      };
 
-  	@media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    	font-size: 13px;
-  	};
+      @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        font-size: 13px;
+      };
 `;

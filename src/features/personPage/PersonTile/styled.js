@@ -8,14 +8,14 @@ export const PersonTileContainer = styled.div`
     margin-top: 56px;
     gap: 40px;
 
-	@media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
-		gap: 16px;
+        gap: 16px;
         padding: 16px;
         min-height: 148px;
-	}
+    }
 `;
 
 export const Image = styled.img`
@@ -25,11 +25,11 @@ export const Image = styled.img`
     float: left;
     margin: 0 40px 0 0;
 
-	@media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-		width: 116px;
+    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        width: 116px;
         height: 174px;
         margin: 0;
-	}
+    }
 `;
 
 export const PersonDataContainer = styled.div`
@@ -40,13 +40,13 @@ export const Name = styled.h1`
     font-size: 36px;
     font-weight: 600;
     line-height: 120%;
-	margin: 0;
+    margin: 0;
 
-	@media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-		font-size: 20px;
-		font-weight: 500;
-		line-height: 130%;
-	}
+    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 130%;
+    }
 `;
 
 export const BirthText = styled.span`
@@ -55,9 +55,9 @@ export const BirthText = styled.span`
     font-weight: 400;
     line-height: 120%;
 
-	@media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-		font-size: 12px;
-	}
+    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        font-size: 12px;
+    }
 `;
 
 export const Span = styled.span`
@@ -66,10 +66,10 @@ export const Span = styled.span`
     }
 
     @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-		&::before {
+        &::before {
             content: "Birth: ";
         }
-	}
+    }
 `;
 
 export const BirthDate = styled.p`
@@ -77,9 +77,9 @@ export const BirthDate = styled.p`
     font-weight: 400;
     line-height: 120%;
 
-	@media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-		font-size: 12px;
-	}
+    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        font-size: 12px;
+    }
 `;
 
 export const DescriptionText = styled.p`
@@ -88,7 +88,7 @@ export const DescriptionText = styled.p`
     line-height: 160%;
     margin: 0;
 
-	@media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-		font-size: 14px;
-	}
+    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        font-size: 14px;
+    }
 `;

@@ -6,12 +6,12 @@ export const GridWrapper = styled.div`
     margin: 0 auto;
     
     @media (max-width: ${({ theme }) => theme.breakpoints.narrow}) {
-    	width: 904px;
-  	};
+        width: 904px;
+      };
     
     @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    	width: 672px;
-  	};
+        width: 672px;
+      };
     
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         width: 592px;

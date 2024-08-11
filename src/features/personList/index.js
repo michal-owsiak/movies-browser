@@ -4,11 +4,11 @@ import { PeopleGrid } from "../../common/PersonTile/styled";
 import PersonTile from "../../common/PersonTile";
 import Pagination from "../../common/Pagination";
 import {
-	decrementPage,
+    decrementPage,
     goToTheFirstPage,
     goToTheLastPage,
-	incrementPage,
-	selectPage,
+    incrementPage,
+    selectPage,
     setCurrentPage
 } from "../../common/Pagination/paginationSlice";
 import { GlobalWrapper } from "../../common/GlobalWrapper/styled";
@@ -27,7 +27,7 @@ const PopularPeople = () => {
     const page = useSelector(selectPage);
 
     const searchParams = new URLSearchParams(location.search).get("page");
-	let pageToSet = searchParams ? parseInt(searchParams) : 1;
+    let pageToSet = searchParams ? parseInt(searchParams) : 1;
 
     useEffect(() => {
         dispatch(setCurrentPage(pageToSet))
